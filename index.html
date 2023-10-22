@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: 'cursive-font', cursive; /* Sử dụng một font cursive (chữ viết tay) */
+            font-family: 'cursive-font', cursive;
             margin: 0;
             padding: 0;
             background-color: #f2f2f2;
         }
 
-        /* Định nghĩa font chữ cursive */
         @font-face {
             font-family: 'cursive-font';
             src: url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap');
-       }
+        }
 
-        /* Các phần còn lại của CSS giữ nguyên */
         header {
             background-color: #333;
             color: #fff;
@@ -50,14 +48,13 @@
             color: #ddd;
         }
 
-        /* Styles for the title in the left corner */
         #title-left {
             float: left;
             padding: 10px;
         }
 
         .subpage-title {
-            float: right; /* Align subpage titles to the right */
+            float: right;
         }
 
         section {
@@ -65,13 +62,17 @@
             padding: 20px;
             background-color: #fff;
             border-radius: 5px;
-            max-width: 800px; /* Limit the width of the content */
+            max-width: 800px;
+            text-align: justify; /* Căn lề hai bên cho đoạn văn bản */
+        }
+
+        h1 {
+            font-size: 24px; /* Giảm kích thước font chữ cho tiêu đề */
         }
     </style>
 </head>
 <body>
     <header>
-        <!-- Title in the left corner -->
         <div id="title-left">
             <h1>Computational Mechanics</h1>
         </div>
@@ -81,7 +82,7 @@
             <li><a href="index.html" class="subpage-title">About Me</a></li>
             <li><a href="resume.html" class="subpage-title">Resume</a></li>
             <li><a href="publications.html" class="subpage-title">Publications</a></li>
-            <li><a href="collaboration.html" class="subpage-title">Collaboration</a></li>
+            <li><a href "collaboration.html" class="subpage-title">Collaboration</a></li>
             <li><a href="contact.html" class="subpage-title">Contact</a></li>
         </ul>
     </nav>
