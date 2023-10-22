@@ -17,7 +17,7 @@ body {
 
 /* Cài đặt màu nền, màu chữ, căn giữa và đệm cho phần đầu trang */
 header {
-    background: transparent; /* Màu nền là #333 (màu xám đậm) */
+    background: transparent;
     color: #fff; /* Màu chữ là #fff (màu trắng) */
     text-align: center; /* Căn giữa chữ */
     padding: 20px 0; /* Đệm 20px trên và dưới, 0px hai bên */
@@ -31,7 +31,7 @@ h1 {
 
 /* Cài đặt màu nền, căn giữa và xóa lề cho thanh điều hướng */
 nav {
-    background-color: #000; /* Màu nền là đen (#000) */
+    background-color:  transparent;
     text-align: center; /* Căn giữa chữ */
     clear: both; /* Ngăn chặn float trái/phải của các phần tử trước đó */
 }
