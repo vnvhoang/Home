@@ -1,29 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Collaboration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Create an external CSS file for better organization -->
+    <style>
+        /* Basic CSS styles for collaborators' information */
+        .collaborator {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        
+        .collaborator h4 {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Collaboration</h1>
+        <div id="title-container">
+            <h1>Computational Mechanics</h1>
+        </div>
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="collaboration.html">Collaboration</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="subpage-title">About me</a></li>
+            <li><a href="resume.html" class="subpage-title">Resume</a></li>
+            <li><a href="publications.html" class="subpage-title">Publications</a></li>
+            <li><a href="collaboration.html" class="subpage-title">Collaboration</a></li>
+            <li><a href="contact.html" class="subpage-title">Contact</a></li>
         </ul>
     </nav>
     <section>
-        <h2>Collaborators</h2>
-        <ul>
-            <li>Collaborator 1</li>
-            <li>Collaborator 2</li>
-            <!-- Add your collaborators as list items -->
-        </ul>
-        <!-- Add more collaboration sections as needed -->
+        <div align="center">
+            <h2>Welcome to our exciting journey into the world of computational mechanics! Our collaboration brings together experts with expertise in numerical methods, structural analysis, fluid dynamics, and material modeling, among other disciplines. Together, we are on a quest to explore and develop innovative solutions to some of the most pressing challenges in various industries, ranging from mechanical and civil engineering to aerospace engineering and beyond.</h2>
+        </div>
+
+        <h3>Collaborators</h3>
+
+        <div class="collaborator">
+            <h4>Assoc. Prof. Peng Shi</h4>
+            <p>School of Intelligent Manufacturing<br> Huanghuai University</p>
+        </div>
+
+        <div class="collaborator">
+            <h4>Lester Toledo</h4>
+            <p>Department of Aerospace Engineering<br> Seoul Nation University</p>
+        </div>
+
+        <div class="collaborator">
+            <h4>Dr. P.T. Thanh (Advisor)</h4>
+            <p>Faculty of Heat and Refrigeration Engineering<br> Industrial University of Ho Chi Minh City</p>
+        </div>
     </section>
 </body>
 </html>
