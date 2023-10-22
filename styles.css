@@ -94,6 +94,7 @@ h2 {
     margin-bottom: 10px;
     color: #333;
     text-shadow: #CCC 2px 2px 2px; /* Bóng chữ màu xám nhạt với offset 2px theo chiều ngang và dọc */
+    text-align: center;
 }
 
 /* Cách mỗi đoạn văn bản cách nhau 1 dòng */
