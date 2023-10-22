@@ -39,15 +39,15 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 20px; 
+    margin: 0 20px;
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 16px; 
-    transition: color 0.3s; 
+    font-size: 16px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
@@ -61,18 +61,19 @@ nav a:hover {
 
 .subpage-title {
     font-weight: bold;
-    font-size: 24px; 
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 section {
-    margin: 40px auto; 
+    margin: 40px auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.7); /* 70% độ trong suốt */
     border-radius: 10px;
     box-shadow: #999 5px 5px 5px;
     max-width: 900px;
-    text-align: left;
+    text-align: justify; /* Căn lề 2 bên */
+    line-height: 1.5; /* Khoảng cách giữa các dòng */
     box-shadow: #999 5px 5px 5px;
 }
 
