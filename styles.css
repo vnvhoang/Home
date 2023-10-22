@@ -74,7 +74,7 @@ section {
     max-width: 900px;
     text-align: justify; /* Căn lề 2 bên */
     line-height: 1.5; /* Khoảng cách giữa các dòng */
-    margin-bottom: 20px; /* Thêm khoảng cách giữa các đoạn văn bản */
+    margin-bottom: 35px; /* Thêm khoảng cách giữa các đoạn văn bản */
     box-shadow: #999 5px 5px 5px;
 }
 
