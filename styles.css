@@ -6,14 +6,14 @@ body, h1, h2, p {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive; /* Sử dụng font Pacifico hoặc một font giống chữ viết tay khác */
     background: url('Background1.jpg') center/cover fixed #f2f2f2;
     color: #333; /* Set a default text color */
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    font-family: 'Pacifico';
+    src: url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 }
 
 header {
