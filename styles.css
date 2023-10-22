@@ -5,38 +5,30 @@ body, h1, h2, p {
 }
 
 body {
-    font-family: 'cursive-font', cursive;
-    background-image: url('Background1.jpg');
+    font-family: 'Arial', sans-serif; /* Sử dụng font Arial hoặc font khác bạn thích */
     background-color: #f2f2f2;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-@font-face {
-    font-family: 'cursive-font';
-    src: url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap');
 }
 
 header {
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
 }
 
 h1 {
-    font-size: 36px; /* Adjust the font size for the h1 element */
+    font-size: 36px;
+    text-transform: uppercase; /* Biến đổi văn bản thành chữ in hoa */
 }
 
 nav {
     background-color: #444;
     text-align: center;
-    clear: both;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin-left: 20px;
 }
 
 nav li {
@@ -61,18 +53,19 @@ nav a:hover {
 
 .subpage-title {
     font-weight: bold;
-    font-size: 18px; /* Adjust the font size for the subpage titles */
+    font-size: 18px;
 }
 
 section {
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #fff;
     border-radius: 5px;
     max-width: 800px;
     text-align: justify;
 }
 
 h2 {
-    font-size: 24px; /* Adjust the font size for the h2 element */
+    font-size: 24px;
+    color: #333; /* Màu sắc tiêu đề */
 }
