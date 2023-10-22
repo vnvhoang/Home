@@ -17,7 +17,7 @@ body {
 
 /* Cài đặt màu nền, màu chữ, căn giữa và đệm cho phần đầu trang */
 header {
-    background: rgba(51, 51, 51, 1); /* Màu nền là #333 (màu xám đậm) */
+    background: transparent; /* Màu nền là #333 (màu xám đậm) */
     color: #fff; /* Màu chữ là #fff (màu trắng) */
     text-align: center; /* Căn giữa chữ */
     padding: 20px 0; /* Đệm 20px trên và dưới, 0px hai bên */
