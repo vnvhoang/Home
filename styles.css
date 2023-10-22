@@ -31,7 +31,7 @@ h1 {
 
 /* Cài đặt màu nền, căn giữa và xóa lề cho thanh điều hướng */
 nav {
-    background-color: #444; /* Màu nền là #444 (màu xám sẫm) */
+    background-color: #000; /* Màu nền là đen (#000) */
     text-align: center; /* Căn giữa chữ */
     clear: both; /* Ngăn chặn float trái/phải của các phần tử trước đó */
 }
