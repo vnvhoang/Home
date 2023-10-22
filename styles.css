@@ -1,4 +1,3 @@
-/* Reset some default margin and padding values for better consistency */
 body, h1, h2, p {
     margin: 0;
     padding: 0;
@@ -6,9 +5,9 @@ body, h1, h2, p {
 }
 
 body {
-    font-family: 'Pacifico', cursive; /* Sử dụng font Pacifico hoặc một font giống chữ viết tay khác */
+    font-family: 'Pacifico', cursive;
     background: url('Background1.jpg') center/cover fixed #f2f2f2;
-    color: #333; /* Set a default text color */
+    color: #333;
 }
 
 @font-face {
@@ -17,14 +16,14 @@ body {
 }
 
 header {
-    background: #333; /* Darken the header background color */
+    background: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
 }
 
 h1 {
-    font-size: 48px; /* Increase the font size of the main title */
+    font-size: 48px;
     margin-bottom: 20px;
 }
 
@@ -41,15 +40,15 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 20px; /* Wider spacing between navigation items */
+    margin: 0 20px; 
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 16px; /* Adjust the font size of navigation items */
-    transition: color 0.3s; /* Add a smooth color transition on hover */
+    font-size: 16px; 
+    transition: color 0.3s; 
 }
 
 nav a:hover {
@@ -63,27 +62,24 @@ nav a:hover {
 
 .subpage-title {
     font-weight: bold;
-    font-size: 24px; /* Increase the font size of subpage titles */
+    font-size: 24px; 
     margin-bottom: 10px;
 }
 
 section {
-    margin: 40px auto; /* Wider spacing around sections */
+    margin: 40px auto; 
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Slightly increase background opacity */
-    border-radius: 10px; /* Round the corners of sections */
-    max-width: 900px; /* Wider maximum width for content */
-    text-align: justify;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    background-color:#f9f9f9; /* Thay đổi màu nền */
+	border-radius:10px; /* Làm tròn góc */
+	box-shadow:#999 5px 5px 5px; /* Thêm bóng */
+	max-width:900px; /* Giới hạn chiều rộng tối đa */
+	text-align:left; /* Căn lề trái */
+	box-shadow:#999 5px 5px 5px; /* Thêm bóng */
 }
 
 h2 {
-    font-size: 30px; /* Increase the font size of subsection titles */
-    margin-bottom: 10px;
-}
-
-/* Add a hover effect for section headings */
-h2:hover {
-    color: #333;
-    transition: color 0.3s;
+	font-size:30px; /* Tăng kích thước chữ */
+	margin-bottom:10px; /* Tăng khoảng cách dưới tiêu đề */
+	color:#333; /* Thay đổi màu chữ */
+	text-shadow:#CCC 2px 2px 2px; /* Thêm bóng cho chữ */
 }
