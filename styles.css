@@ -1,16 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* Reset some default margin and padding values for better consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
     background: url('Background1.jpg') center/cover fixed #f2f2f2;
-    margin: 0;
-    padding: 0;
+    color: #333; /* Set a default text color */
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 }
 
 header {
+    background: #333; /* Darken the header background color */
     color: #fff;
     text-align: center;
     padding: 20px 0;
+}
+
+h1 {
+    font-size: 48px; /* Increase the font size of the main title */
+    margin-bottom: 20px;
 }
 
 nav {
@@ -26,13 +41,15 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 20px; /* Wider spacing between navigation items */
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    font-size: 16px; /* Adjust the font size of navigation items */
+    transition: color 0.3s; /* Add a smooth color transition on hover */
 }
 
 nav a:hover {
@@ -41,14 +58,32 @@ nav a:hover {
 
 #title-container {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+}
+
+.subpage-title {
+    font-weight: bold;
+    font-size: 24px; /* Increase the font size of subpage titles */
+    margin-bottom: 10px;
 }
 
 section {
-    margin: 20px auto;
+    margin: 40px auto; /* Wider spacing around sections */
     padding: 20px;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 5px;
-    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly increase background opacity */
+    border-radius: 10px; /* Round the corners of sections */
+    max-width: 900px; /* Wider maximum width for content */
     text-align: justify;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+h2 {
+    font-size: 30px; /* Increase the font size of subsection titles */
+    margin-bottom: 10px;
+}
+
+/* Add a hover effect for section headings */
+h2:hover {
+    color: #333;
+    transition: color 0.3s;
 }
