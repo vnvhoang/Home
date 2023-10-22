@@ -85,7 +85,7 @@ section {
     max-width: 900px; /* Chiều rộng tối đa là 900px */
     text-align: justify; /* Căn lề hai bên */
     line-height: 1.5; /* Khoảng cách giữa các dòng là 1.5 lần kích thước chữ */
-    margin-bottom: 35px; /* Thêm khoảng cách giữa các đoạn văn bản */
+    margin-bottom: 50px; /* Thêm khoảng cách giữa các đoạn văn bản */
 }
 
 /* Cài đặt kích thước chữ, khoảng cách dưới, màu chữ và bóng chữ cho tiêu đề h2 */
