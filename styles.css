@@ -5,7 +5,7 @@ body, h1, h2, p {
 }
 
 body {
-    font-family: 'new-font', cursive; /* Sử dụng font mới */
+    font-family: 'cursive-font', cursive;
     background-image: url('Background1.jpg');
     background-color: #f2f2f2;
     background-size: cover;
@@ -13,8 +13,8 @@ body {
 }
 
 @font-face {
-    font-family: 'new-font'; /* Đặt tên cho font mới */
-    src: url('https://fonts.googleapis.com/css2?family=NewFont:wght@400&display=swap'); /* Thay đổi đường dẫn và tên font mới */
+    font-family: 'cursive-font';
+    src: url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap');
 }
 
 header {
@@ -24,7 +24,7 @@ header {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 36px; /* Adjust the font size for the h1 element */
 }
 
 nav {
@@ -61,7 +61,7 @@ nav a:hover {
 
 .subpage-title {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 18px; /* Adjust the font size for the subpage titles */
 }
 
 section {
@@ -74,5 +74,5 @@ section {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 24px; /* Adjust the font size for the h2 element */
 }
