@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -44,6 +43,16 @@
             color: #ddd;
         }
 
+        /* Styles for the title in the left corner */
+        #title-left {
+            float: left;
+            padding: 10px;
+        }
+
+        .subpage-title {
+            float: right; /* Align subpage titles to the right */
+        }
+
         section {
             margin: 20px auto;
             padding: 20px;
@@ -55,15 +64,18 @@
 </head>
 <body>
     <header>
-        <h1>About Me</h1>
+        <!-- Title in the left corner -->
+        <div id="title-left">
+            <h1>Computational Mechanics</h1>
+        </div>
     </header>
     <nav>
         <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="collaboration.html">Collaboration</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="subpage-title">About Me</a></li>
+            <li><a href="resume.html" class="subpage-title">Resume</a></li>
+            <li><a href="publications.html" class="subpage-title">Publications</a></li>
+            <li><a href="collaboration.html" class="subpage-title">Collaboration</a></li>
+            <li><a href="contact.html" class="subpage-title">Contact</a></li>
         </ul>
     </nav>
     <section>
