@@ -1,86 +1,97 @@
 /* Cài đặt font cho toàn bộ trang */
 body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Fira Code', monospace;
+    margin: 0; /* Xóa lề mặc định */
+    padding: 0; /* Xóa đệm mặc định */
+    box-sizing: border-box; /* Đặt box-sizing thành border-box để chiều rộng và chiều cao bao gồm padding và border, không phải content */
+    font-family: 'Fira Code', monospace; /* Sử dụng font 'Fira Code' hoặc font monospace nếu 'Fira Code' không khả dụng */
 }
 
 /* Thêm đường dẫn liên kết đến font 'Fira Code' từ Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
+/* Cài đặt màu nền và màu chữ cho toàn bộ trang */
 body {
-    background: url('Background1.jpg') center/cover fixed #f2f2f2;
-    color: #333;
+    background: url('Background1.jpg') center/cover fixed #f2f2f2; /* Sử dụng hình ảnh 'Background1.jpg' làm nền, căn giữa, che đầy và cố định, với màu nền là #f2f2f2 nếu hình ảnh không khả dụng */
+    color: #333; /* Màu chữ là #333 (màu xám đậm) */
 }
 
+/* Cài đặt màu nền, màu chữ, căn giữa và đệm cho phần đầu trang */
 header {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    background: #333; /* Màu nền là #333 (màu xám đậm) */
+    color: #fff; /* Màu chữ là #fff (màu trắng) */
+    text-align: center; /* Căn giữa chữ */
+    padding: 20px 0; /* Đệm 20px trên và dưới, 0px hai bên */
 }
 
+/* Cài đặt kích thước chữ và khoảng cách dưới cho tiêu đề h1 */
 h1 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 30px; /* Kích thước chữ là 30px */
+    margin-bottom: 10px; /* Khoảng cách dưới là 10px */
 }
 
+/* Cài đặt màu nền, căn giữa và xóa lề cho thanh điều hướng */
 nav {
-    background-color: #444;
-    text-align: center;
-    clear: both;
+    background-color: #444; /* Màu nền là #444 (màu xám sẫm) */
+    text-align: center; /* Căn giữa chữ */
+    clear: both; /* Ngăn chặn float trái/phải của các phần tử trước đó */
 }
 
+/* Xóa kiểu danh sách và đệm cho các phần tử ul trong thanh điều hướng */
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Xóa kiểu danh sách mặc định (dấu chấm, số,...) */
+    padding: 0; /* Xóa đệm mặc định */
 }
 
+/* Hiển thị các phần tử li trong thanh điều hướng theo chiều ngang và cài đặt khoảng cách hai bên */
 nav li {
-    display: inline-block;
-    margin: 0 20px;
+    display: inline-block; /* Hiển thị theo chiều ngang (không xuống dòng) với khả năng thiết lập width/height */
+    margin: 0 20px; /* Khoảng cách hai bên là 20px, không khoảng cách trên/dưới */
 }
 
+/* Xóa gạch chân, cài đặt màu chữ, trọng lượng chữ, kích thước chữ và hiệu ứng chuyển màu cho các liên kết trong thanh điều hướng */
 nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s;
+    text-decoration: none; /* Xóa gạch chân của liên kết */
+    color: #fff; /* Màu chữ là #fff (màu trắng) */
+    font-weight: bold; /* Trọng lượng chữ là bold (đậm) */
+    font-size: 16px; /* Kích thước chữ là 16px */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu trong vòng 0.3s */
 }
 
+/* Cài đặt màu chữ khi di chuột qua các liên kết trong thanh điều hướng */
 nav a:hover {
-    color: #ddd;
+    color: #ddd; /* Màu chữ khi di chuột qua là #ddd (màu xám nhạt) */
 }
 
+/* Cài đặt căn giữa và đệm cho khung tiêu đề của các trang con */
 #title-container {
-    text-align: center;
-    padding: 20px;
+    text-align: center; /* Căn giữa chữ */
+    padding: 20px; /* Đệm 20px tất cả các phía */
 }
 
+/* Cài đặt trọng lượng chữ, kích thước chữ và khoảng cách dưới cho tiêu đề của các trang con */
 .subpage-title {
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-weight: bold; /* Trọng lượng chữ là bold (đậm) */
+    font-size: 24px; /* Kích thước chữ là 24px */
+    margin-bottom: 10px; /* Khoảng cách dưới là 10px */
 }
 
+/* Cài đặt lề, đệm, màu nền, bo góc, bóng, chiều rộng tối đa, căn lề hai bên, khoảng cách giữa các dòng và khoảng cách dưới cho các phần nội dung */
 section {
-    margin: 40px auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* 70% độ trong suốt */
-    border-radius: 10px;
-    box-shadow: #999 5px 5px 5px;
-    max-width: 900px;
-    text-align: justify; /* Căn lề 2 bên */
-    line-height: 1.5; /* Khoảng cách giữa các dòng */
+    margin: 40px auto; /* Lề tự động hai bên để căn giữa khối */
+    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.7); /* Màu trắng với 70% độ trong suốt */
+    border-radius: 10px; /* Bo góc 10px */
+    box-shadow: #999 5px 5px 5px; /* Bóng màu xám nhạt với offset 5px theo chiều ngang và dọc */
+    max-width: 900px; /* Chiều rộng tối đa là 900px */
+    text-align: justify; /* Căn lề hai bên */
+    line-height: 1.5; /* Khoảng cách giữa các dòng là 1.5 lần kích thước chữ */
     margin-bottom: 35px; /* Thêm khoảng cách giữa các đoạn văn bản */
-    box-shadow: #999 5px 5px 5px;
 }
 
+/* Cài đặt kích thước chữ, khoảng cách dưới, màu chữ và bóng chữ cho tiêu đề h2 */
 h2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #333;
-    text-shadow: #CCC 2px 2px 2px;
+    text-shadow: #CCC 2px 2px 2px; /* Bóng chữ màu xám nhạt với offset 2px theo chiều ngang và dọc */
 }
