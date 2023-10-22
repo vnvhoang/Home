@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'cursive-font', cursive; /* Sử dụng một font cursive (chữ viết tay) */
             margin: 0;
             padding: 0;
             background-color: #f2f2f2;
         }
 
+        /* Định nghĩa font chữ cursive */
+        @font-face {
+            font-family: 'cursive-font';
+            src: url('link_to_cursive_font.woff'); /* Điều chỉnh link_to_cursive_font thành đường dẫn tới font cursive bạn muốn sử dụng */
+        }
+
+        /* Các phần còn lại của CSS giữ nguyên */
         header {
             background-color: #333;
             color: #fff;
@@ -79,8 +86,7 @@
         </ul>
     </nav>
     <section>
-        <h2>Introduction</h2>
-        <p>Hello and welcome to my personal website!</p>
+        <h2>Hello and welcome to my personal website!</h2>
         <p>My name is Vu Ngoc Viet Hoang, and I am a dedicated and passionate graduate student, focusing on computational mechanics. My drive stems from a profound fascination with understanding and manipulating the mechanical behavior of materials and structures. Throughout my academic journey, I have immersed myself in rigorous studies, practical research, and a relentless thirst for knowledge in the realm of mechanics.</p>
         <p>My aspiration is to contribute significantly to the advancement of technology and industry by unraveling the complexities of solid mechanics, innovating in design methodologies, and pushing the boundaries of material performance. I am eager to collaborate, learn, and immerse myself in the vibrant community of professionals and scholars dedicated to making a lasting impact in this fascinating field.</p>
     </section>
