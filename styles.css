@@ -6,6 +6,20 @@ body, h1, h2, p {
     font-family: 'Fira Code', monospace; /* Sử dụng font 'Fira Code' hoặc font monospace nếu 'Fira Code' không khả dụng */
 }
 
+
+
+/* Default style for subpage titles */
+.subpage-title {
+    color: blue; /* Set the default color to blue */
+}
+
+/* Style for the subpage title when on that page */
+.subpage-title.active {
+    color: green; /* Change the color to green for the active page */
+}
+
+
+
 /* Thêm đường dẫn liên kết đến font 'Fira Code' từ Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
