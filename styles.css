@@ -110,7 +110,16 @@ h2 {
     text-shadow: #CCC 2px 2px 2px; /* Bóng chữ màu xám nhạt với offset 2px theo chiều ngang và dọc */
     text-align: center; /* Căn giữa chữ */
     font-style: italic; /* Đặt chữ in nghiêng */
+    transition: all 0.3s ease; /* Hiệu ứng mượt mà trong 0.3 giây */
 }
+
+/* Thêm hiệu ứng khi di chuột qua tiêu đề h2 */
+h2:hover {
+    color: green; /* Thay đổi màu chữ khi di chuột qua h2 */
+    font-size: 20px; /* Thay đổi kích thước chữ khi di chuột qua h2 */
+    text-shadow: #00FF00 3px 3px 3px; /* Thay đổi bóng chữ khi di chuột qua h2 */
+}
+
 
 /* Cách mỗi đoạn văn bản cách nhau 1 dòng */
 p {
