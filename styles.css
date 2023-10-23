@@ -123,9 +123,6 @@ h2 {
 
 /* Thêm hiệu ứng khi di chuột qua tiêu đề h2 */
 h2:hover {
-    color: green; /* Thay đổi màu chữ khi di chuột qua h2 */
-    font-size: 18px; /* Thay đổi kích thước chữ khi di chuột qua h2 */
-    text-shadow: #00FF00 0.5px 0.5px 0.5px; /* Thay đổi bóng chữ khi di chuột qua h2 */
     font-style: italic; /* Đặt chữ in nghiêng */
 }
 
