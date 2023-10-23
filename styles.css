@@ -44,18 +44,35 @@ header {
 }
 
 /* CSS để áp dụng hiệu ứng chuyển động cho h1 */
+/* CSS để áp dụng hiệu ứng chuyển động cho h1 */
 h1 {
     font-size: 30px;
     margin-bottom: 10px;
-    position: relative; /* Đặt vị trí tương đối cho phần tử h1 */
-    transition: color 0.3s, transform 0.5s; /* Hiệu ứng chuyển màu trong 0.3s và hiệu ứng transform trong 0.5s */
-    cursor: pointer; /* Biểu tượng con trỏ khi di chuột qua */
+    position: relative;
+    transition: color 0.3s, transform 0.5s;
+    cursor: pointer;
 }
 
-h1:hover {
-    color: green; /* Thay đổi màu chữ khi di chuột qua */
-    font-style: italic; /* Đặt chữ in nghiêng */
+/* Tạo keyframes cho hiệu ứng hình động */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
 }
+
+/* Áp dụng keyframes vào tiêu đề h1 */
+h1:hover {
+    color: green;
+    font-style: italic;
+    animation: bounce 0.6s ease infinite; /* Sử dụng keyframes "bounce" trong 0.6s vô hạn */
+}
+
 
 
 /* Cài đặt màu nền, căn giữa và xóa lề cho thanh điều hướng */
