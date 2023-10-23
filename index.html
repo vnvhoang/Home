@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    
+    <style>
+        /* CSS để tạo hiệu ứng cho h2 */
+        h2 {
+            transition: all 0.3s ease; /* Hiệu ứng mượt mà trong 0.3 giây */
+        }
+
+        h2:hover {
+            color: red; /* Thay đổi màu chữ khi di chuột qua h2 */
+            font-size: 24px; /* Thay đổi độ lớn của h2 khi di chuột qua nó */
+        }
+    </style>    
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Get the current page's filename (e.g., "index.html" or "resume.html")
