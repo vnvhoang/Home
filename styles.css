@@ -105,7 +105,7 @@ section {
 
 /* Cài đặt kích thước chữ, khoảng cách dưới, màu chữ và bóng chữ cho tiêu đề h2 */
 h2 {
-    font-size: 20px; /* Kích thước chữ là 18px */
+    font-size: 18px; /* Kích thước chữ là 18px */
     margin-bottom: 10px; /* Khoảng cách dưới là 10px */
     color: #333; /* Màu chữ là #333 (màu xám đậm) */
     font-family: cursive; /* Sử dụng font chữ viết tay, ví dụ: "cursive" */
