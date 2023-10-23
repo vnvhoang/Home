@@ -54,7 +54,7 @@ h1 {
 
 h1:hover {
     color: green; /* Thay đổi màu chữ khi di chuột qua */
-    transform: scale(1.1); /* Phóng to chữ khi di chuột qua */
+    font-style: italic; /* Đặt chữ in nghiêng */
 }
 
 
