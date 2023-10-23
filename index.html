@@ -4,6 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> <!-- Create an external CSS file for better organization -->
+    <style>
+        .selected {
+            color: green;
+        }
+    </style>
+    <script>
+        // JavaScript to add a click event to subpage titles
+        document.addEventListener('DOMContentLoaded', function () {
+            var subpageTitles = document.querySelectorAll('.subpage-title');
+
+            subpageTitles.forEach(function (title) {
+                title.addEventListener('click', function () {
+                    // Remove the 'selected' class from all titles
+                    subpageTitles.forEach(function (element) {
+                        element.classList.remove('selected');
+                    });
+
+                    // Add the 'selected' class to the clicked title
+                    title.classList.add('selected');
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -22,7 +45,7 @@
     </nav>
     <section>
         <div align="center">
-        <h2>Hello and welcome to my personal website!</h2>
+            <h2>Hello and welcome to my personal website!</h2>
         </div>    
         <p>I am Vu Ngoc Viet Hoang, a dedicated graduate student with a fervent passion for studying and researching the mechanical behaviors of materials and structures. I've long been captivated by the ability of mechanics to elucidate and manipulate the physical world, and I've wholeheartedly committed myself to the pursuit of knowledge and a deeper understanding of this fascinating field.</p>
         <p>As a devoted scholar, I've relentlessly pursued excellence in both theoretical knowledge and practical application. I've undertaken demanding courses and engaged in cutting-edge research projects that have not only kindled my enthusiasm but also broadened my horizons. The more I uncover about this field, the more I come to appreciate its profound complexity, diversity, and boundless opportunities for innovation.</p>
