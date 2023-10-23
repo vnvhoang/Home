@@ -4,19 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script>
-        // JavaScript to add "active" class to the current page's subpage title
-        document.addEventListener("DOMContentLoaded", () => {
-            const currentPath = window.location.pathname;
-            const links = document.querySelectorAll('.subpage-title');
 
-            links.forEach(link => {
-                if (link.getAttribute('href') === currentPath) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
     <style>
         /* CSS cho các năm công bố */
         .year {
