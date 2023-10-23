@@ -36,11 +36,25 @@ header {
     padding: 20px 0; /* Đệm 20px trên và dưới, 0px hai bên */
 }
 
-/* Cài đặt kích thước chữ và khoảng cách dưới cho tiêu đề h1 */
+/* CSS cho hiệu ứng chuyển động */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); /* Di chuyển về bên trái ngoài màn hình */
+        opacity: 0; /* Ẩn tiêu đề ban đầu */
+    }
+    100% {
+        transform: translateX(0); /* Di chuyển về vị trí ban đầu */
+        opacity: 1; /* Hiển thị tiêu đề */
+    }
+}
+
+/* Áp dụng hiệu ứng chuyển động cho tiêu đề h1 */
 h1 {
     font-size: 30px; /* Kích thước chữ là 30px */
     margin-bottom: 10px; /* Khoảng cách dưới là 10px */
+    animation: slideIn 1s ease-in-out; /* Sử dụng hiệu ứng slideIn trong vòng 1 giây, chuyển động mượt mà */
 }
+
 
 /* Cài đặt màu nền, căn giữa và xóa lề cho thanh điều hướng */
 nav {
