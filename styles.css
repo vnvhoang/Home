@@ -93,7 +93,7 @@ nav a:hover {
 /* Default style for subpage titles */
 .subpage-title {
     color: white;
-    font-size: 24px; /* Kích thước chữ là 16px */
+    font-size: 26px; /* Kích thước chữ là 16px */
     transition: color 0.3s; /* Hiệu ứng chuyển màu trong 0.3s */
 }
 
