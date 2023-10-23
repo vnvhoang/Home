@@ -90,12 +90,23 @@ nav a:hover {
     padding: 20px; /* Đệm 20px tất cả các phía */
 }
 
-/* Cài đặt trọng lượng chữ, kích thước chữ và khoảng cách dưới cho tiêu đề của các trang con */
+/* Default style for subpage titles */
 .subpage-title {
-    font-weight: bold; /* Trọng lượng chữ là bold (đậm) */
-    font-size: 24px; /* Kích thước chữ là 24px */
-    margin-bottom: 10px; /* Khoảng cách dưới là 10px */
+    color: white;
+    transition: color 0.3s; /* Hiệu ứng chuyển màu trong 0.3s */
 }
+
+/* Style for the active subpage title (change the color as desired) */
+.subpage-title.active {
+    color: green; /* Change the color to your preference */
+}
+
+/* Hover effect for subpage titles */
+.subpage-title:hover {
+    color: yellow; /* Change the color when hovering */
+    transform: scale(1.1); /* Phóng to tiêu đề khi di chuột qua */
+}
+
 
 /* Cài đặt lề, đệm, màu nền, bo góc, bóng, chiều rộng tối đa, căn lề hai bên, khoảng cách giữa các dòng và khoảng cách dưới cho các phần nội dung */
 section {
