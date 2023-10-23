@@ -1,11 +1,11 @@
 /* Default style for subpage titles */
 .subpage-title {
-    color: black;
+    color: white;
 }
 
 /* Style for the active subpage title (change the color as desired) */
 .subpage-title.active {
-    color: red; /* Change the color to your preference */
+    color: green; /* Change the color to your preference */
 }
 
 
