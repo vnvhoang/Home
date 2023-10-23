@@ -1,6 +1,8 @@
 /* Default style for subpage titles */
 .subpage-title {
     color: white;
+    font-size: 24px; /* Kích thước chữ là 16px */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu trong 0.3s */
 }
 
 /* Style for the active subpage title (change the color as desired) */
@@ -8,6 +10,11 @@
     color: green; /* Change the color to your preference */
 }
 
+/* Hover effect for subpage titles */
+.subpage-title:hover {
+    color: yellow; /* Change the color when hovering */
+    transform: scale(1.1); /* Phóng to tiêu đề khi di chuột qua */
+}
 
 /* Cài đặt font cho toàn bộ trang */
 body, h1, h2, p {
@@ -90,23 +97,7 @@ nav a:hover {
     padding: 20px; /* Đệm 20px tất cả các phía */
 }
 
-/* Default style for subpage titles */
-.subpage-title {
-    color: white;
-    font-size: 26px; /* Kích thước chữ là 16px */
-    transition: color 0.3s; /* Hiệu ứng chuyển màu trong 0.3s */
-}
 
-/* Style for the active subpage title (change the color as desired) */
-.subpage-title.active {
-    color: green; /* Change the color to your preference */
-}
-
-/* Hover effect for subpage titles */
-.subpage-title:hover {
-    color: yellow; /* Change the color when hovering */
-    transform: scale(1.1); /* Phóng to tiêu đề khi di chuột qua */
-}
 
 
 /* Cài đặt lề, đệm, màu nền, bo góc, bóng, chiều rộng tối đa, căn lề hai bên, khoảng cách giữa các dòng và khoảng cách dưới cho các phần nội dung */
