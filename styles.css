@@ -8,7 +8,9 @@
     color: green; /* Change the color to your preference */
 }
 
-
+.custom-cursor {
+    cursor: url('custom-cursor.png'), auto;
+}
 
 /* Cài đặt font cho toàn bộ trang */
 body, h1, h2, p {
