@@ -8,15 +8,10 @@ body, h1, h2, p {
 
 
 
-/* Default style for subpage titles */
-.subpage-title {
-    color: blue; /* Set the default color to blue */
+.subpage-title.active {
+    color: red; /* Change 'red' to your desired color */
 }
 
-/* Style for the subpage title when on that page */
-.subpage-title.active {
-    color: green; /* Change the color to green for the active page */
-}
 
 
 
