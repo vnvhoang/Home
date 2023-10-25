@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">  
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the current page's filename (e.g., "index.html" or "resume.html")
+            var currentFileName = location.pathname.split('/').slice(-1)[0];
+
+            // Add an "active" class to the sub-page link that corresponds to the current page
+            var subpageLink = document.querySelector(`a[href="${currentFileName}"]`);
+            if (subpageLink) {
+                subpageLink.classList.add("active");
+            }
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div id="title-container">
+            <h1>Computational Mechanics</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="subpage-title">About me</a></li>
+            <li><a href="resume.html" class="subpage-title">Resume</a></li>
+            <li><a href="publications.html" class="subpage-title">Publications</a></li>
+            <li><a href="collaboration.html" class="subpage-title">Collaboration</a></li>
+            <li><a href="gallery.html" class="subpage-title">Gallery</a></li>
+            <li><a href="contact.html" class="subpage-title">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div align="center">
+            <h2>Welcome to my personal website!</h2>
+        </div>
+        <p>Hello</p>
+       
+    </section>
+</body>
+</html>
