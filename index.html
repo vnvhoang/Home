@@ -4,18 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">  
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Get the current page's filename (e.g., "index.html" or "resume.html")
-            var currentFileName = location.pathname.split('/').slice(-1)[0];
+    <style>
+        /* Add a CSS rule to control the layout */
+        .content-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .portrait-image {
+            max-width: 50%;
+            height: auto;
+            margin-right: 20px;
+        }
 
-            // Add an "active" class to the sub-page link that corresponds to the current page
-            var subpageLink = document.querySelector(`a[href="${currentFileName}"]`);
-            if (subpageLink) {
-                subpageLink.classList.add("active");
+        /* Default style for subpage titles */
+        .subpage-title {
+            color: white;
+            font-size: 24px; /* Kích thước chữ là 16px */
+            transition: color 0.3s; /* Hiệu ứng chuyển màu trong 0.3s */
+        }
+
+        /* Style for the active subpage title (change the color as desired) */
+        .subpage-title.active {
+            color: green; /* Change the color to your preference */
+        }
+
+        /* Hover effect for subpage titles */
+        .subpage-title:hover {
+            color: yellow; /* Change the color when hovering */
+            transform: scale(1.1); /* Phóng to tiêu đề khi di chuột qua */
+        }
+
+        /* Cài đặt font cho toàn bộ trang */
+        body, h1, h2, p {
+            margin: 0; /* Xóa lề mặc định */
+            padding: 0; /* Xóa đệm mặc định */
+            box-sizing: border-box; /* Đặt box-sizing thành border-box để chiều rộng và chiều cao bao gồm padding và border, không phải content */
+            font-family: 'Fira Code', monospace; /* Sử dụng font 'Fira Code' hoặc font monospace nếu 'Fira Code' không khả dụng */
+        }
+
+        /* Thêm đường dẫn liên kết đến font 'Fira Code' từ Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+        /* Cài đặt màu nền và màu chữ cho toàn bộ trang */
+        body {
+            background: url('Background1.jpg') center/cover fixed #f2f2f2; /* Sử dụng hình ảnh 'Background1.jpg' làm nền, căn giữa, che đầy và cố định, với màu nền là #f2f2f2 nếu hình ảnh không khả dụng */
+            color: #333; /* Màu chữ là #333 (màu xám đậm) */
+        }
+
+        /* Cài đặt màu nền, màu chữ, căn giữa và đệm cho phần đầu trang */
+        header {
+            background: transparent;
+            color: #fff; /* Màu chữ là #fff (màu trắng) */
+            text-align: center; /* Căn giữa chữ */
+            padding: 20px 0; /* Đệm 20px trên và dưới, 0px hai bên */
+        }
+
+        /* CSS để áp dụng hiệu ứng chuyển động cho h1 */
+        h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            position: relative;
+            transition: color 0.3s, transform 0.5s;
+            cursor: pointer;
+        }
+
+        /* Tạo keyframes cho hiệu ứng hình động */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
             }
-        });
-    </script>
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Áp dụng keyframes vào tiêu đề h1 */
+        h1:hover {
+            color: green;
+            font-style: italic;
+            animation: bounce 0.6s ease infinite; /* Sử dụng keyframes "bounce" trong 0.6s vô hạn */
+        }
+
+        /* Cài đặt màu nền, căn giữa và xóa lề cho thanh điều hướng */
+        nav {
+            background-color:  transparent;
+            text-align: center; /* Căn giữa chữ */
+            clear: both; /* Ngăn chặn float trái/phải của các phần tử trước đó */
+        }
+
+        /* Xóa kiểu danh sách và đệm cho các phần tử ul trong thanh điều hướng */
+        nav ul {
+            list-style: none; /* Xóa kiểu danh sách mặc định (dấu chấm, số,...) */
+            padding: 0; /* Xóa đệm mặc định */
+        }
+
+        /* Hiển thị các phần tử li trong thanh điều hướng theo chiều ngang và cài đặt khoảng cách hai bên */
+        nav li {
+            display: inline-block; /* Hiển thị theo chiều ngang (không xuống dòng) với khả năng thiết lập width/height */
+            margin: 0 20px; /* Khoảng cách hai bên là 20px, không khoảng cách trên/dưới */
+        }
+
+        /* Xóa gạch chân, cài đặt màu chữ, trọng lượng chữ, kích thước chữ và hiệu ứng chuyển màu cho các liên kết trong thanh điều hướng */
+        nav a {
+            text-decoration: none; /* Xóa gạch chân của liên kết */
+            color: #fff; /* Màu chữ là #fff (màu trắng) */
+            font-weight: bold; /* Trọng lượng chữ là bold (đậm) */
+            font-size: 16px; /* Kích thước chữ là 16px */
+            transition: color 0.3s; /* Hiệu ứng chuyển màu trong vòng 0.3s */
+        }
+
+        /* Cài đặt màu chữ khi di chuột qua các liên kết trong thanh điều hướng */
+        nav a:hover {
+            color: #ddd; /* Màu chữ khi di chuột qua là #ddd (màu xám nhạt) */
+        }
+
+        /* Cài đặt căn giữa và đệm cho khung tiêu đề của các trang con */
+        #title-container {
+            text-align: center; /* Căn giữa chữ */
+            padding: 20px; /* Đệm 20px tất cả các phía */
+        }
+
+        /* Cài đặt lề, đệm, màu nền, bo góc, bóng, chiều rộng tối đa, căn lề hai bên, khoảng cách giữa các dòng và khoảng cách dưới cho các phần nội dung */
+        section {
+            margin: 40px auto; /* Lề tự động hai bên để căn giữa khối */
+            padding: 20px; 
+            background-color: rgba(255, 255, 255, 0.85); /* Màu trắng với 70% độ trong suốt */
+            border-radius: 10px; /* Bo góc 10px */
+            box-shadow: #999 5px 5px 5px; /* Bóng màu xám nhạt với offset 5px theo chiều ngang và dọc */
+            max-width: 900px; /* Chiều rộng tối đa là 900px */
+            text-align: justify; /* Căn lề hai bên */
+            line-height: 1.5; /* Khoảng cách giữa các dòng là 1.5 lần kích thước chữ */
+            margin-bottom: 10px; /* Thêm khoảng cách giữa các đoạn văn bản */
+        }
+
+        /* Cài đặt kích thước chữ, khoảng cách dưới, màu chữ và bóng chữ cho tiêu đề h2 */
+        h2 {
+            font-size: 18px; /* Kích thước chữ là 18px */
+            margin-bottom: 10px; /* Khoảng cách dưới là 10px */
+            color: black; 
+            font-family: cursive; /* Sử dụng font chữ viết tay, ví dụ: "cursive" */
+            text-align: center; /* Căn giữa chữ */
+            transition: all 0.3s ease; /* Hiệu ứng mượt mà trong 0.3 giây */
+        }
+
+        /* Thêm hiệu ứng khi di chuột qua tiêu đề h2 */
+        h2:hover {
+            font-style: italic; /* Đặt chữ in nghiêng */
+        }
+
+        /* Cách mỗi đoạn văn bản cách nhau 1 dòng */
+        p {
+            margin-bottom: 1em; /* Cách nhau 1 dòng (sử dụng 1em) */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -34,14 +179,16 @@
         </ul>
     </nav>
     <section>
-        <div align="center">
-            <h2>Welcome to my personal website!</h2>
+        <div class="content-container">
+            <img src="portrait.jpg" width="500" height="auto" alt="Hoang's Portrait" class="portrait-image">
+            <div>
+                <h2>Welcome to my personal website!</h2>
+                <p>I am Hoang, a dedicated graduate student with a profound passion for delving into the mechanical behaviors of materials and structures through study and research. Mechanics has long held me captivated due to its remarkable ability to elucidate and manipulate the physical world. I am wholeheartedly committed to the relentless pursuit of knowledge and a deeper understanding of this intriguing field.</p>
+                <p>As an ardent researcher, I have diligently pursued excellence in both theoretical knowledge and practical application. I've engaged in rigorous coursework and participated in cutting-edge research projects that have not only ignited my enthusiasm but also broadened my horizons. The more I delve into this discipline, the more I come to appreciate its profound complexity, diversity, and limitless opportunities for innovation.</p>
+                <p>My ultimate aspiration is to make a significant contribution to the advancement of technology and industry by unraveling the mysteries of mechanics, forging innovative design methodologies, and enhancing material performance. I firmly believe that through my work, I can have a positive impact in the domains of engineering and science. It is an honor to be part of a dynamic community of professionals and scholars who share the same vision and unwavering commitment to effecting change in this remarkable field.</p>
+                <p>This website serves as a gateway to my academic and professional journey. Here, you will discover more about my research, my experiences, and the projects I've had the privilege to be involved in. I extend a warm invitation to explore the content and engage with me on this exciting voyage into the realm of computational mechanics. Whether you're an enthusiast, a potential collaborator, or simply someone intrigued by the intricacies of this field, I am eager to interact and share my passion with you. Thank you for visiting, and I hope you thoroughly enjoy our shared exploration of the wonders of mechanics.</p>
+            </div>
         </div>
-        <img src="portrait.jpg" width="500" height="auto" alt="Hoang's Portrait" class="portrait-image">
-        <p>I am Hoang, a dedicated graduate student with a profound passion for delving into the mechanical behaviors of materials and structures through study and research. Mechanics has long held me captivated due to its remarkable ability to elucidate and manipulate the physical world. I am wholeheartedly committed to the relentless pursuit of knowledge and a deeper understanding of this intriguing field.</p>
-        <p>As an ardent researcher, I have diligently pursued excellence in both theoretical knowledge and practical application. I've engaged in rigorous coursework and participated in cutting-edge research projects that have not only ignited my enthusiasm but also broadened my horizons. The more I delve into this discipline, the more I come to appreciate its profound complexity, diversity, and limitless opportunities for innovation.</p>
-        <p>My ultimate aspiration is to make a significant contribution to the advancement of technology and industry by unraveling the mysteries of mechanics, forging innovative design methodologies, and enhancing material performance. I firmly believe that through my work, I can have a positive impact in the domains of engineering and science. It is an honor to be part of a dynamic community of professionals and scholars who share the same vision and unwavering commitment to effecting change in this remarkable field.</p>
-        <p>This website serves as a gateway to my academic and professional journey. Here, you will discover more about my research, my experiences, and the projects I've had the privilege to be involved in. I extend a warm invitation to explore the content and engage with me on this exciting voyage into the realm of computational mechanics. Whether you're an enthusiast, a potential collaborator, or simply someone intrigued by the intricacies of this field, I am eager to interact and share my passion with you. Thank you for visiting, and I hope you thoroughly enjoy our shared exploration of the wonders of mechanics.</p>
     </section>
 </body>
 </html>
