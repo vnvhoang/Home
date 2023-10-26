@@ -31,7 +31,7 @@ body, h1, h2, p {
 
 /* Cài đặt màu nền và màu chữ cho toàn bộ trang */
 
-body.resume {
+body {
     background: url('Background1.jpg') center/cover fixed #f2f2f2; /* Sử dụng hình ảnh 'Background1.jpg' làm nền, căn giữa, che đầy và cố định, với màu nền là #f2f2f2 nếu hình ảnh không khả dụng */
     color: #333; /* Màu chữ là #333 (màu xám đậm) */
 }
