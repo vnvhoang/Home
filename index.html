@@ -7,16 +7,19 @@
     <style>
         .portrait-container {
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Align items to the top */
         }
 
         .portrait-image {
-            width: 300px;
+            width: 200px; /* Reduce the width to fit in the corner */
             height: auto;
+            position: absolute; /* Position absolutely within the section */
+            top: 0; /* Align to the top of the section */
+            left: 0; /* Align to the left of the section */
         }
 
         .portrait-text {
-            margin-left: 20px; /* Adjust the margin as needed */
+            margin-left: 220px; /* Adjust the margin as needed to create space for the text */
         }
     </style>
     <script>
