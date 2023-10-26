@@ -7,29 +7,26 @@
     <style>
         .portrait-container {
             display: flex;
-            flex-direction: column; /* Display vertically on small screens */
-            align-items: center; /* Center align content */
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .portrait-image {
-            max-width: 100%; /* Ensure the image doesn't exceed its container */
+            max-width: 100%; /* Ensure the image doesn't overflow its container */
             height: auto;
         }
 
         .portrait-text {
-            margin-top: 20px; /* Add space between the image and text on small screens */
+            flex: 1; /* Allow text to take up the remaining space */
+            margin: 20px;
         }
 
-        @media (min-width: 768px) {
-            /* Apply these styles for screens wider than 768px (tablets and desktops) */
+        @media (max-width: 768px) {
             .portrait-container {
-                flex-direction: row; /* Display horizontally on larger screens */
-                justify-content: center; /* Center align content horizontally */
+                flex-direction: column;
             }
-
             .portrait-text {
-                margin-top: 0; /* Reset margin for larger screens */
-                margin-left: 20px;
+                margin: 10px;
             }
         }
     </style>
@@ -55,10 +52,10 @@
     <nav>
         <ul>
             <li><a href="index.html" class="subpage-title">About me</a></li>
-            <li><a href="resume.html" class="subpage-title">Resume</a></li>
+            <li><a href="resume.html" class "subpage-title">Resume</a></li>
             <li><a href="publications.html" class="subpage-title">Publications</a></li>
             <li><a href="collaboration.html" class="subpage-title">Collaboration</a></li>
-            <li><a href="gallery.html" class "subpage-title">Gallery</a></li>
+            <li><a href="gallery.html" class="subpage-title">Gallery</a></li>
             <li><a href="contact.html" class="subpage-title">Contact</a></li>
         </ul>
     </nav>
