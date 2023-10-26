@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">  
+    <style>
+        .image-container {
+            display: flex;
+        }
+        .image-container img {
+            width: 300px;
+            height: auto;
+        }
+    </style>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Get the current page's filename (e.g., "index.html" or "resume.html")
@@ -26,7 +35,7 @@
     <nav>
         <ul>
             <li><a href="index.html" class="subpage-title">About me</a></li>
-            <li><a href="resume.html" class="subpage-title">Resume</a></li>
+            <li><a href="resume.html" class "subpage-title">Resume</a></li>
             <li><a href="publications.html" class="subpage-title">Publications</a></li>
             <li><a href="collaboration.html" class="subpage-title">Collaboration</a></li>
             <li><a href="gallery.html" class="subpage-title">Gallery</a></li>
@@ -37,13 +46,13 @@
         <div align="center">
             <h2></h2>
         </div>
-        
         <div>
             <p>First Prize at the "National Scientific Research Contest 2020 for Students" organized by the Ministry of Education and Training</p>
-            <img src="ga1.jpg" alt="gallery">
-            <img src="ga2.jpg" alt="gallery">
+            <div class="image-container">
+                <img src="ga1.jpg" alt="gallery1">
+                <img src="ga2.jpg" alt="gallery2">
+            </div>
         </div>
-       
     </section>
 </body>
 </html>
