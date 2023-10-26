@@ -7,27 +7,16 @@
     <style>
         .portrait-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
         }
 
         .portrait-image {
-            max-width: 100%; /* Ensure the image doesn't overflow its container */
+            width: 400px; /* Adjust the width as needed */
             height: auto;
+            align-self: flex-start; /* Align the image to the top */
         }
 
         .portrait-text {
-            flex: 1; /* Allow text to take up the remaining space */
-            margin: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .portrait-container {
-                flex-direction: column;
-            }
-            .portrait-text {
-                margin: 10px;
-            }
+            margin-left: 20px; /* Adjust the margin as needed */
         }
     </style>
     <script>
@@ -52,7 +41,7 @@
     <nav>
         <ul>
             <li><a href="index.html" class="subpage-title">About me</a></li>
-            <li><a href="resume.html" class "subpage-title">Resume</a></li>
+            <li><a href="resume.html" class="subpage-title">Resume</a></li>
             <li><a href="publications.html" class="subpage-title">Publications</a></li>
             <li><a href="collaboration.html" class="subpage-title">Collaboration</a></li>
             <li><a href="gallery.html" class="subpage-title">Gallery</a></li>
