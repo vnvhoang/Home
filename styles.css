@@ -1,12 +1,12 @@
 /* Trong file styles.css */
 .image-container {
     text-align: center;
-    max-width: 100%; /* Ảnh sẽ không vượt quá chiều rộng của vùng chứa */
+    max-width: 50%; /* Ảnh sẽ không vượt quá chiều rộng của vùng chứa */
     margin: 0 auto; /* Canh giữa ảnh */
 }
 
 .portrait-image {
-    max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng của vùng chứa */
+    max-width: 50%; /* Đảm bảo ảnh không vượt quá chiều rộng của vùng chứa */
     height: auto; /* Duy trì tỷ lệ khung hình gốc */
 }
 
