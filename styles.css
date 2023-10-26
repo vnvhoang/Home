@@ -1,7 +1,12 @@
+ /* Add a CSS rule to control the layout */
+.content-container {
+            display: flex;
+            align-items: center;
+}
 .portrait-image {
-    max-width: 25%; /* Đảm bảo ảnh không vượt quá chiều rộng của vùng chứa */
-    height: auto; /* Duy trì tỷ lệ khung hình gốc */
-    width: auto; /* Tự động tính toán chiều rộng dựa trên chiều cao để giữ nguyên tỷ lệ khung hình */
+            max-width: 50%;
+            height: auto;
+            margin-right: 20px; /* Add some spacing between the image and text */
 }
 
 
