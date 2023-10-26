@@ -7,16 +7,30 @@
     <style>
         .portrait-container {
             display: flex;
+            flex-direction: column; /* Display vertically on small screens */
+            align-items: center; /* Center align content */
         }
 
         .portrait-image {
-            width: 400px; /* Adjust the width as needed */
+            max-width: 100%; /* Ensure the image doesn't exceed its container */
             height: auto;
-            align-self: flex-start; /* Align the image to the top */
         }
 
         .portrait-text {
-            margin-left: 20px; /* Adjust the margin as needed */
+            margin-top: 20px; /* Add space between the image and text on small screens */
+        }
+
+        @media (min-width: 768px) {
+            /* Apply these styles for screens wider than 768px (tablets and desktops) */
+            .portrait-container {
+                flex-direction: row; /* Display horizontally on larger screens */
+                justify-content: center; /* Center align content horizontally */
+            }
+
+            .portrait-text {
+                margin-top: 0; /* Reset margin for larger screens */
+                margin-left: 20px;
+            }
         }
     </style>
     <script>
@@ -44,7 +58,7 @@
             <li><a href="resume.html" class="subpage-title">Resume</a></li>
             <li><a href="publications.html" class="subpage-title">Publications</a></li>
             <li><a href="collaboration.html" class="subpage-title">Collaboration</a></li>
-            <li><a href="gallery.html" class="subpage-title">Gallery</a></li>
+            <li><a href="gallery.html" class "subpage-title">Gallery</a></li>
             <li><a href="contact.html" class="subpage-title">Contact</a></li>
         </ul>
     </nav>
