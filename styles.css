@@ -1,14 +1,7 @@
-/* Thay đổi kích thước của image-container */
-.image-container {
-    text-align: center;
-    max-width: 50%; /* Giữ nguyên chiều rộng của vùng chứa */
-    margin: 0 auto; /* Canh giữa ảnh */
-}
-
-/* Thay đổi kích thước của portrait-image */
 .portrait-image {
-    max-width: 25%; /* Đặt kích thước tối đa là 25% */
+    max-width: 25%; /* Đảm bảo ảnh không vượt quá chiều rộng của vùng chứa */
     height: auto; /* Duy trì tỷ lệ khung hình gốc */
+    width: auto; /* Tự động tính toán chiều rộng dựa trên chiều cao để giữ nguyên tỷ lệ khung hình */
 }
 
 
