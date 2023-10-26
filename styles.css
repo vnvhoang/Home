@@ -1,3 +1,20 @@
+/* Add styles to the portrait image */
+.portrait-image {
+    width: 400px; /* Adjust the width as needed */
+    height: auto;
+    align-self: flex-start; /* Align the image to the top */
+    border: 5px solid #ddd; /* Add a border with a light gray color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    filter: grayscale(30%); /* Convert the image to grayscale */
+    transition: filter 0.5s ease-in-out; /* Add a transition effect for hover */
+}
+
+/* Change the filter on hover to remove grayscale effect */
+.portrait-image:hover {
+    filter: grayscale(0%);
+}
+
+
 
 /* Default style for subpage titles */
 .subpage-title {
