@@ -1,12 +1,13 @@
-/* Trong file styles.css */
+/* Thay đổi kích thước của image-container */
 .image-container {
     text-align: center;
-    max-width: 50%; /* Ảnh sẽ không vượt quá chiều rộng của vùng chứa */
+    max-width: 50%; /* Giữ nguyên chiều rộng của vùng chứa */
     margin: 0 auto; /* Canh giữa ảnh */
 }
 
+/* Thay đổi kích thước của portrait-image */
 .portrait-image {
-    max-width: 50%; /* Đảm bảo ảnh không vượt quá chiều rộng của vùng chứa */
+    max-width: 25%; /* Đặt kích thước tối đa là 25% */
     height: auto; /* Duy trì tỷ lệ khung hình gốc */
 }
 
