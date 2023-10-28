@@ -25,5 +25,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Change background image every 1 minute (60000 milliseconds)
-    setInterval(changeBackgroundImage, 60000);
+    setInterval(changeBackgroundImage, 0.5*60000);
 });
