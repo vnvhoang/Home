@@ -33,9 +33,8 @@ body, h1, h2, p {
 
 
 body {
-    background: url('Background1.jpg') center/cover #f2f2f2;
+    background: url('Background1.jpg') center/cover fixed #f2f2f2;
     color: #333;
-    background-size: cover;
 }
 
 /* Cài đặt màu nền, màu chữ, căn giữa và đệm cho phần đầu trang */
