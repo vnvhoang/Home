@@ -26,6 +26,17 @@
         font-size: 22px; /* Set the font size to 20 pixels */
         font-weight: bold; /* Make the text bold */
     }
+
+    @keyframes starBlink {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+    100% { opacity: 1; transform: scale(1); }
+    }
+
+    .blinking-star {
+    animation: starBlink 1s infinite;
+    }
+        
     </style>
 
     <script>
@@ -65,7 +76,7 @@
                 <figcaption class="portrait-caption">Vu Ngoc Viet Hoang</figcaption>
             </figure>
             <div class="portrait-text">
-                <h2>Welcome to my personal website!</h2>
+                <h2><span class="blinking-star">🌟</span> Welcome to my personal website! <span class="blinking-star">🌟</span> </h2>
                 <p>I am delighted to have you here and to share my journey in the world of computational mechanics. My name is Hoang, and I hold a bachelor's degree in mechanical engineering from Hanoi University of Science and Technology in the vibrant city of Hanoi, Vietnam.</p>
                 <p>Currently, I find myself immersed in the fascinating world of academic research as an international visiting scholar at Huanghuai University in Henan, China. This incredible opportunity has allowed me to broaden my horizons and collaborate with excellent researchers, further fueling my passion for the field.</p>
                 <p>But the excitement doesn't end there. I stand on the brink of a new and thrilling chapter in my academic and professional journey. I am eagerly preparing to embark on a Master of Science program at the prestigious Shanghai Jiao Tong University in the bustling metropolis of Shanghai, China, where I aim to delve deeper into the intricacies of mechanics.</p>
