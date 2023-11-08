@@ -12,7 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var backgroundImages = [
         'Background1.jpg',
         'Background2.jpg',
-        'Background3.jpg'
+        'Background3.jpg',
+        'Background4.jpg',
+        'Background5.jpg'
         // Add more image URLs as needed
     ];
 
