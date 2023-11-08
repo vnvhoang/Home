@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
         'Background2.jpg',
         'Background3.jpg',
         'Background4.jpg',
-        'Background5.jpg'
+        'Background5.jpg',
+        'Background6.jpg'
         // Add more image URLs as needed
     ];
 
@@ -27,5 +28,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Change background image every 1 minute (60000 milliseconds)
-    setInterval(changeBackgroundImage, 45000);
+    setInterval(changeBackgroundImage, 30000);
 });
