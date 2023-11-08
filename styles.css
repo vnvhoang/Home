@@ -123,7 +123,7 @@ nav a:hover {
 section {
     margin: 40px auto; /* Lề tự động hai bên để căn giữa khối */
     padding: 20px; 
-    background-color: rgba(255, 255, 255, 0.5); /* Màu trắng với 70% độ trong suốt */
+    background-color: rgba(255, 255, 255, 0.75); /* Màu trắng với 70% độ trong suốt */
     border-radius: 10px; /* Bo góc 10px */
     box-shadow: #999 5px 5px 5px; /* Bóng màu xám nhạt với offset 5px theo chiều ngang và dọc */
     max-width: 1500px; /* Chiều rộng tối đa là 900px */
