@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+    
+    <style>
+    @keyframes rotate {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(90deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    .flashing-icon {
+        display: inline-block;
+        animation: rotate 1s infinite;
+    }
+        
+    </style>
+    
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Get the current page's filename (e.g., "index.html" or "resume.html")
@@ -21,7 +36,7 @@
 <body>
     <header>
         <div id="title-container">
-            <h1>Discovering Computational Mechanics</h1>
+            <h1><span class="flashing-icon">⚙️</span> Discovering Computational Mechanics <span class="flashing-icon">⚙️</span></h1>
         </div>
     </header>
     <nav>
