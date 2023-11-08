@@ -27,6 +27,17 @@
         font-weight: bold; /* Make the text bold */
     }
 
+    .blink {
+        animation: blinker 1s linear infinite;
+        font-size: 25px; /* Thay đổi kích thước của biểu tượng */
+    }
+
+    @keyframes blinker {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+        
     @keyframes rotate {
         0% { transform: rotate(0deg); }
         50% { transform: rotate(90deg); }
@@ -77,7 +88,7 @@
                 <figcaption class="portrait-caption"> Vu Ngoc Viet Hoang </figcaption>
             </figure>
             <div class="portrait-text">
-                <h2><span class="flashing-icon">🎉</span> Welcome to my personal website! <span class="flashing-icon">🎉</span></h2>
+                <h2><span class="blink">🎉</span> Welcome to my personal website! <span class="blink">🎉</span></h2>
                 <p>I am delighted to have you here and to share my journey in the world of computational mechanics. My name is Hoang, and I hold a bachelor's degree in mechanical engineering from Hanoi University of Science and Technology in the vibrant city of Hanoi, Vietnam.</p>
                 <p>Currently, I find myself immersed in the fascinating world of academic research as an international visiting scholar at Huanghuai University in Henan, China. This incredible opportunity has allowed me to broaden my horizons and collaborate with excellent researchers, further fueling my passion for the field.</p>
                 <p>But the excitement doesn't end there. I stand on the brink of a new and thrilling chapter in my academic and professional journey. I am eagerly preparing to embark on a Master of Science program at the prestigious Shanghai Jiao Tong University in the bustling metropolis of Shanghai, China, where I aim to delve deeper into the intricacies of mechanics.</p>
