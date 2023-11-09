@@ -45,34 +45,12 @@ header {
     padding: 20px 0; /* Đệm 20px trên và dưới, 0px hai bên */
 }
 
-/* CSS để áp dụng hiệu ứng chuyển động cho h1 */
+
 /* CSS để áp dụng hiệu ứng chuyển động cho h1 */
 h1 {
     font-size: 30px;
     margin-bottom: 10px;
     position: relative;
-    transition: color 0.3s, transform 0.5s;
-    cursor: pointer;
-}
-
-/* Tạo keyframes cho hiệu ứng hình động */
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-10px);
-    }
-    60% {
-        transform: translateY(-5px);
-    }
-}
-
-/* Áp dụng keyframes vào tiêu đề h1 */
-h1:hover {
-    color: green;
-    font-style: italic;
-    animation: bounce 0.6s ease infinite; /* Sử dụng keyframes "bounce" trong 0.6s vô hạn */
 }
 
 
@@ -123,7 +101,7 @@ nav a:hover {
 section {
     margin: 40px auto; /* Lề tự động hai bên để căn giữa khối */
     padding: 20px; 
-    background-color: rgba(255, 255, 255, 0.75); /* Màu trắng với 70% độ trong suốt */
+    background-color: rgba(255, 255, 255, 0.65); /* Màu trắng với 70% độ trong suốt */
     border-radius: 10px; /* Bo góc 10px */
     box-shadow: #999 5px 5px 5px; /* Bóng màu xám nhạt với offset 5px theo chiều ngang và dọc */
     max-width: 1500px; /* Chiều rộng tối đa là 900px */
